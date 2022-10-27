@@ -264,9 +264,9 @@ def plot2(ax, title, x, y, jiku, typea, typej):
     ax.spines["right"].set_visible(False)
     ax.spines["top"].set_visible(False)
     # 塗りつぶし
-    ax.axvspan(0, 25, 0, 1, color="#e8e8e8")
-    ax.axvspan(5, 20, 0.2, 0.8, color="#d0d0d0")
-    ax.axvspan(10, 15, 0.4, 0.6, color="#b8b8b8")
+    ax.axvspan(0, 25, 0, 1, color="#e8e8e8", alpha=0.5)
+    ax.axvspan(5, 20, 0.2, 0.8, color="#d0d0d0", alpha=0.5)
+    ax.axvspan(10, 15, 0.4, 0.6, color="#b8b8b8", alpha=0.5)
 
     # 得点
     ax.scatter([x], [y], s=350, marker="*", color="yellow")
