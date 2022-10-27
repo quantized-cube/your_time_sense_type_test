@@ -62,7 +62,6 @@ for q in questions:
         q, options=[1, 2, 3, 4, 5],  value=3,
         format_func=lambda x: p2ja[x],
     )
-    # st.write("あなたが選んだのは ", a, " です")
     answers.append(a)
 
 
@@ -70,10 +69,9 @@ st.markdown("## 結果")
 
 # 予期が「濃い」または「薄い」
 yoki_kosa = sum([a for a in answers[0:5]])
-# st.write(f"{yoki_kosa=}")
 # 予期が「多い」または「少ない」
 yoki_osa = sum([a for a in answers[5:10]])
-# st.write(f"{yoki_osa=}")
+# 予期のタイプ
 if yoki_kosa >= 13:
     if yoki_osa >= 13:
         yoki = "A: 容量超過"
@@ -87,10 +85,9 @@ else:
 
 # 想起が「正しい」または「誤り」
 soki_tadashisa = sum([a for a in answers[10:15]])
-# st.write(f"{soki_tadashisa=}")
 # 想起が「肯定的」または「否定的」
 soki_kouteisa = sum([a for a in answers[15:20]])
-# st.write(f"{soki_kouteisa=}")
+# 想起のタイプ
 if soki_tadashisa >= 13:
     if soki_kouteisa >= 13:
         soki = "E: 自信家"
