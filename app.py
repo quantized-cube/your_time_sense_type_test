@@ -263,3 +263,7 @@ st.markdown("## 参考")
 st.markdown(
     "- [『YOUR TIME ユア・タイム: 4063の科学データで導き出した、あなたの人生を変える最後の時間術』](https://amzn.to/3Sx3d8m)、鈴木 祐、河出書房新社、978-4-309-30023-8")
 st.markdown("- [時間感覚タイプテスト（河出書房新社Webページ）](https://www.kawade.co.jp/YOURTIME/)")
+
+
+st.markdown("## Contact")
+st.markdown("- Twitter: [@quantized_cube](https://twitter.com/quantized_cube)")
